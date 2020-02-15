@@ -4,7 +4,7 @@ context('Actions', () => {
     })
         
     it('.type() - type into a DOM element', () => {
-        // komen
+        
         // daftar akun baru
         // cy
         // .get('#btn_daftar')
