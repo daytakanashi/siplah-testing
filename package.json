@@ -1,0 +1,21 @@
+{
+  "name": "siplah-testing",
+  "version": "1.0.0",
+  "description": "testing siplah",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daytakanashi/siplah-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daytakanashi/siplah-testing/issues"
+  },
+  "homepage": "https://github.com/daytakanashi/siplah-testing#readme",
+  "devDependencies": {
+    "cypress": "^4.0.2"
+  }
+}
