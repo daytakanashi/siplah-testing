@@ -28,6 +28,7 @@ context('Actions', () => {
          .get('#usernameLoginRef')
          .click()
          .type('takanashiday@gmail.com')
+         .wait(1000)
          .get('.product-content > .mt15 > .grid-x > .large-12 > :nth-child(3) > .ng-untouched')
          .click()
          .type('123456789')
@@ -40,24 +41,27 @@ context('Actions', () => {
         .click()
         .get('[tabindex="0"] > .f-black')
         .click()
-        cy.get('.grid-x > :nth-child(1) > .logo-dobuy > .mr-auto')
+        cy.get('#namaToko-input')
         .click()
-        .get('.rounded-img')
-        .click()
-        .get('[tabindex="0"] > .f-black')
-        .click()
-        // nama toko
-        .get('#namaToko-input')
-        .click()
-        .type('toko coba 1')
-        // nama domain
+        .type('Toko coba')
         .get('#namaDomain-input')
         .click()
         .type('tokoCoba')
-        // pilih kategori
-        .get('#namaCategory-input')
+        cy.get('#namaCategory-input')
         .click()
         .type('buku')
+        // nama toko
+        // .get('#namaToko-input')
+        // .click()
+        // .type('toko coba 1')
+        // nama domain
+        // .get('#namaDomain-input')
+        // .click()
+        // .type('tokoCoba')
+        // pilih kategori
+        // .get('#namaCategory-input')
+        // .click()
+        // .type('buku')
         // .select('buku')
 
     })
